@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mod 19 Homework</title>
+    <!-- Link to CSS Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Link to JavaScript and JQuery file -->
+    <script src="script.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!-- Logo & Nav Section --> 
+    <header class="navigation">
+        <div class="logo inline-block">
+            <img src="Images/Header_Logo.png" alt="Logo">               
+        </div> 
+        <nav class="inline-block">
+            <ul>
+                <li class="inline-block">About</li>
+                <li class="inline-block">Skills</li>
+                <li class="inline-block">Work</li>
+                <li class="inline-block">Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="heroSection">
+        <div class="heroContent">
+            <div class="heroBlurb java">
+                <p>Hello, my name is</p>
+                <img src="Images/Hero_Name.png" alt="Katherine Esteve">
+                <p> I am a UX/UI Designer based in Chicago, IL. <br> My specialty is design rooted in empathy and functionality.</p>
+                <br>
+                <button class="resume java">See Resume</button>
+            </div>
+            <div>
+                <img src="Images/Hero_Image.png" alt="Hero Image" id="Hero"> 
+            </div>
+        </div>
+    </section>
+
+    <!--Work-->
+    <section class="workSection">
+        <h1 class="header">My Work</h1>
+        <section class="workContent">
+            <!--Project One: CPR -->
+            <div class="project row1">
+                <div class="column1">
+                    <img src="Images/Image_Project.png" alt="projectOne" class="img1">
+                </div>
+                <div class="column2">
+                    <h3>01 Chicago Pet Rescue Website</h3>
+                    <div class="pinkBar"></div>
+                    <p>Lorem ipsum dolor sit amet...</p>
+                    <button>View Case</button>
+                </div>
+            </div>
+            <!--Project Two: EcoQuest -->
+            <div class="project row2">
+                <div class="column1">
+                    <img src="Images/Image_Project.png" alt="projectTwo" class="img1">
+                </div>
+                <div class="column2">
+                    <h3>02 EcoQuest Mobile App</h3>
+                    <div class="greenBar"></div>
+                    <p>Lorem ipsum dolor sit amet...</p>
+                    <button>View Case</button>
+                </div>
+            </div>
+            <!--Project Three: Nomad -->
+            <div class="project row3">
+                <div class="column1">
+                    <img src="Images/Image_Project.png" alt="projectThree" class="img1">
+                </div>
+                <div class="column2">
+                    <h3>03 Nomad Mobile App</h3>
+                    <div class="yellowBar"></div>
+                    <p>Lorem ipsum dolor sit amet...</p>
+                    <button>View Case</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Let's Connect</h2>
+        <div>
+            <img src="Images/Icon_LinkedIn.png" alt="LinkedIn">
+            <img src="Images/Icon_Email.png" alt="Email">
+            <img src="Images/Icon_Phone.png" alt="Phone">
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.resume.java').addEventListener('click', function() {
+            console.log('Resume download button clicked.');
+            window.open('https://drive.google.com/file/d/1UPVoMAVgmsorNHNsmCU70PfDNg_H6sU9/view?usp=sharing', '_blank');
+        });
+        </script>
+        
+</body>
+</html>
